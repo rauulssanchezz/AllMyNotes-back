@@ -1,0 +1,11 @@
+{
+  "name": "allmynotes-back",
+  "version": "1.0.0",
+  "description": "Api for allmynotes app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Raúl Sánchez Sánchez & Jorge Martin Herrera",
+  "license": "ISC"
+}
