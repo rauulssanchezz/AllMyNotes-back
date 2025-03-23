@@ -1,14 +1,15 @@
 import { Server } from "./presentation/server.js"
+import { AuthRoutes } from "./presentation/auth/routes.js"
 
 (() => {
     main()
 })()
 
 async function main() {
-    console.log('a')
+    
     new Server({
         port: 3000,
-        routes: 'Not implemented'
+        routes: AuthRoutes.routes
     }).start()
 
 }
