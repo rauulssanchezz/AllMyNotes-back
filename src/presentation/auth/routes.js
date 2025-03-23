@@ -3,7 +3,7 @@ import { Router } from 'express'
 
 export class AuthRoutes {
 
-    static getRoutes() {
+    static get routes() {
 
         const router = Router()
 
