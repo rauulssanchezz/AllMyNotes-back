@@ -4,15 +4,14 @@
   "description": "Api for allmynotes app",
   "main": "app.js",
   "scripts": {
-    "dev": "nodemon --watch src --ext js,json --ignore node_modules src/app.js",
+    "dev": "node --watch src/app.js",
     "build": "rimraf ./dist && tsc",
     "start": "npm run build && node dist/app.js"
   },
   "author": "Raúl Sánchez Sánchez & Jorge Martin Herrera",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.21.2",
-    "nodemon": "^3.1.9"
+    "express": "^4.21.2"
   },
   "type": "module"
 }
