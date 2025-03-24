@@ -7,7 +7,7 @@ export class AppRoutes {
 
         const router = Router()
 
-        router.use('/auth/', AuthRoutes.routes)
+        router.use('/auth', AuthRoutes.routes)
 
         return router
 

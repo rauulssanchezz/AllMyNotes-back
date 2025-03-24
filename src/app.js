@@ -1,5 +1,5 @@
 import { Server } from "./presentation/server.js"
-import { AuthRoutes } from "./presentation/auth/routes.js"
+import { AppRoutes } from "./presentation/router.js"
 
 (() => {
     main()
@@ -9,7 +9,7 @@ async function main() {
     
     new Server({
         port: 3000,
-        routes: AuthRoutes.routes
+        routes: AppRoutes.routes
     }).start()
 
 }
