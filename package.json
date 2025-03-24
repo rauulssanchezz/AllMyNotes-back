@@ -4,7 +4,7 @@
   "description": "Api for allmynotes app",
   "main": "app.js",
   "scripts": {
-    "dev": "node --watch src/app.js",
+    "dev": "node --watch --env-file=.env src/app.js",
     "build": "rimraf ./dist && tsc",
     "start": "npm run build && node dist/app.js"
   },
