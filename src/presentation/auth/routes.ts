@@ -1,9 +1,9 @@
-import { AuthController } from './controller.js'
+import { AuthController } from './controllert.ts'
 import { Router } from 'express'
 
 export class AuthRoutes {
 
-    static get routes() {
+    public static get routes(): Router {
 
         const router = Router()
 

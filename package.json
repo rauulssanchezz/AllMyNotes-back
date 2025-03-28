@@ -4,7 +4,7 @@
   "description": "Api for allmynotes app",
   "main": "app.js",
   "scripts": {
-    "dev": "node --watch --env-file=.env src/app.js",
+    "dev": "node --watch --env-file=.env --experimental-strip-types src/app.ts",
     "build": "rimraf ./dist && tsc",
     "start": "npm run build && node dist/app.js"
   },
@@ -13,5 +13,8 @@
   "dependencies": {
     "express": "^4.21.2"
   },
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "@types/express": "^5.0.1"
+  }
 }
