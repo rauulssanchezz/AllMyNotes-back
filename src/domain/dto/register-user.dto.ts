@@ -23,7 +23,7 @@ export class RegisterUserDto {
         if (password.length < 6) return ['Password is too short'];
 
         return [
-            undefined,
+            'User created',
             new RegisterUserDto(name, email, password)
         ];
     }
