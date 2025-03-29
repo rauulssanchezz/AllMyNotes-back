@@ -1,5 +1,5 @@
 
-import { Validators } from "../../config/validators.ts";
+import { Validators } from "../../config/index.ts";
 import { UserEntity } from "../entities/userEntity.ts";
 
 export class RegisterUserDto {
