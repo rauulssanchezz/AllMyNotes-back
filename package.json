@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "dev": "node --watch --env-file=.env --experimental-strip-types src/app.ts",
-    "build": "rimraf ./dist && tsc",
+    "vercel-build": "node --experimental-strip-types src/app.ts > dist/app.js",
     "start": "npm run build && node dist/app.js"
   },
   "author": "Raúl Sánchez Sánchez & Jorge Martin Herrera",
