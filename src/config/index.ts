@@ -1,5 +1,5 @@
 
 
 
-export * from './bcrypt.adapter.ts'
-export * from './validators.ts'
+export * from './bcrypt.adapter.js'
+export * from './validators.js'

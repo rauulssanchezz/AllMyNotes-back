@@ -1,4 +1,4 @@
-import { AuthRoutes } from "./auth/routes.ts"
+import { AuthRoutes } from './auth/routes.js'
 import { Router } from "express"
 
 export class AppRoutes {

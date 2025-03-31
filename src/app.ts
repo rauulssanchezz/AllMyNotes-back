@@ -1,5 +1,5 @@
-import { Server } from "./presentation/server.ts"
-import { AppRoutes } from "./presentation/router.ts"
+import { Server } from './presentation/server.js'
+import { AppRoutes } from './presentation/router.js'
 
 (() => {
     main()

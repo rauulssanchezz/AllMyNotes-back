@@ -1,4 +1,4 @@
-import { AuthController } from './controllert.ts'
+import { AuthController } from './controllert.js'
 import { Router } from 'express'
 
 export class AuthRoutes {
