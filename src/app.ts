@@ -6,9 +6,9 @@ import { AppRoutes } from "./presentation/router.ts"
 })()
 
 async function main() {
-    
+
     new Server({
-        port: 3000,
+        port: Number.parseInt(process.env.PORT || '3000'),
         routes: AppRoutes.routes
     }).start()
 
