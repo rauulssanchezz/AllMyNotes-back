@@ -1,6 +1,6 @@
 
-import { Validators } from "../../config/index.js";
-import { UserEntity } from "../entities/userEntity.js";
+import { Validators } from "../../config/index.ts";
+import { UserEntity } from "../entities/userEntity.ts";
 
 export class RegisterUserDto {
     private name: string

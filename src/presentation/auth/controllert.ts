@@ -1,7 +1,7 @@
 
 import express from 'express'
-import { RegisterUserDto } from '../../domain/dto/register-user.dto.js'
-import { BcryptAdapter } from '../../config/index.js';
+import { RegisterUserDto } from '../../domain/dto/register-user.dto.ts'
+import { BcryptAdapter } from '../../config/index.ts';
 
 
 export class AuthController {

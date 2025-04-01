@@ -1,5 +1,5 @@
 import jsonwebtoken from 'jsonwebtoken'
-import { CustomError } from '../domain/errors/custom.error.js'
+import { CustomError } from '../domain/errors/custom.error.ts'
 
 const secret = process.env.JWT_SEED
 
