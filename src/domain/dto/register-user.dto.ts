@@ -1,5 +1,5 @@
 
-import { Validators } from "../../config/index.ts";
+import { JsonWebTokenAdapter, Validators } from "../../config/index.ts";
 import { UserEntity } from "../entities/userEntity.ts";
 
 export class RegisterUserDto {
@@ -13,8 +13,15 @@ export class RegisterUserDto {
         this.password = password;
     }
 
-    public static create(object: UserEntity) {
+    public static async create(object: UserEntity) {
         const { name, email, password } = object;
+
+        const token: string|null = await JsonWebTokenAdapter.signToken({
+                                                                    email: email,
+                                                                    password: password
+                                                                }, 
+                                                                    7200
+                                                                )
 
         if (!name) return ['Name is required'];
         if (!email) return ['Email is required'];
@@ -23,7 +30,7 @@ export class RegisterUserDto {
         if (password.length < 6) return ['Password is too short'];
 
         return [
-            'User created',
+            `token: ${token}`,
             new RegisterUserDto(name, email, password)
         ];
     }

@@ -11,7 +11,7 @@ export class AuthController {
 
         const hashPassword = await BcryptAdapter.hash(password)
 
-        const newUser = RegisterUserDto.create({
+        const newUser = await RegisterUserDto.create({
             name: name,
             email: email,
             password: hashPassword
