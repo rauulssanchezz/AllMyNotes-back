@@ -5,7 +5,7 @@
         "rewriteRelativeImportExtensions": true,
         "erasableSyntaxOnly": true,
         "verbatimModuleSyntax": true,
-        "outDir": "./dist",
+        "outDir": "./src/dist",
     },
     "include": [
         "src/**/*.ts"
