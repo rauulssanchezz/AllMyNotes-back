@@ -3,10 +3,10 @@
 export class NoteEntity {
     title: string
     content: string
-    date: Date
+    date: number
     ownerId: string
 
-    constructor(title: string, content: string, date: Date, ownerId: string) {
+    constructor(title: string, content: string, date: number, ownerId: string) {
         this.title = title
         this.content = content
         this.date = date
