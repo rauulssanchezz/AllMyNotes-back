@@ -1,8 +1,8 @@
 
 export class UserEntity {
-    name: string
-    email: string
-    password: string
+    private name: string
+    private email: string
+    private password: string
 
     public constructor(name: string, email: string, password: string) {
         this.name = name;
