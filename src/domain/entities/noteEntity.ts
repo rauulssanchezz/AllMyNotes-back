@@ -1,10 +1,10 @@
 
 
 export class NoteEntity {
-    private title: string
-    private content: string
-    private date: Date
-    private ownerId: string
+    title: string
+    content: string
+    date: Date
+    ownerId: string
 
     constructor(title: string, content: string, date: Date, ownerId: string) {
         this.title = title
