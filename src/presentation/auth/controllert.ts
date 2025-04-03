@@ -1,6 +1,6 @@
 
 import express from 'express'
-import { RegisterUserDto } from '../../domain/dto/register-user.dto.ts'
+import { RegisterUserDto } from '../../domain/dtos/register-user.dto.ts'
 import { BcryptAdapter } from '../../config/index.ts';
 
 
